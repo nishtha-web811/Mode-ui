@@ -41,8 +41,10 @@ p{
 }
 /* navbar */
 .navbar{
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 20px 80px;
+}
+.navbar-nav{
+    gap: 16px;
 }
 .nav-link{
     font-family: 'Inter';
@@ -55,7 +57,10 @@ p{
     color: var(--gray);
     gap: 8px;
     border: none;
+    border-radius: 8px;
+    order: 2;
 }
+
 
 
 
@@ -92,7 +97,11 @@ p{
     color: white;
     border-radius: 8px;
     border: none;
-    gap: 8px;
+    gap: 10px;
+    padding-right: 20px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 .hero-text-section .fifth-text{
     color: var(--gray);
@@ -111,7 +120,9 @@ p{
 }
 
 /* first and second features section */
-
+.features-section{
+    padding: 96px 80px;
+}
 .main-title h2{
     font-family: 'Manrope';
     font-weight: 600;
@@ -184,7 +195,7 @@ p{
     padding: 6px;
 }
  .status-sub-section{
-    gap: 30px;
+    gap: 24px;
  }
 .status-section-main-title{
     font-family: 'Manrope';
@@ -246,11 +257,12 @@ p{
     padding: 96px 80px;
 }
 .unlock-section-title{
-    width: 60%;
     font-family: 'Manrope';
     font-weight: 600;
     color: var(--primary-color);
     line-height: 48px;
+    max-width: 615px;
+    text-align: center;
 }
 .two-btn{
     padding-top: 32px;
@@ -295,12 +307,6 @@ p{
 
 
 
-@media (min-width: 992px) {
-    .col-lg-3 {
-        flex: 0 0 auto;
-        width: 20%;
-    }
-}
 .row a{
     text-decoration: none;
     font-family: 'Inter';
@@ -316,10 +322,98 @@ p{
 }
 
 
-.foooter-last-line{
+.footer-last-line{
     font-family: 'Inter';
-    padding-bottom: 40px;
+    padding-bottom: 40px !important;
 }
 .footer-logo i{
     cursor: pointer;
 }
+
+@media (max-width: 576px){
+    .navbar{
+        padding: 20px 26px;
+    }
+    .navbar :nth-child(2){
+        gap: 38px;
+    }
+    .second-text{
+    font-size: 40px !important;
+    }
+    .unlock-your-card {
+        width: 100%;
+    }
+    .forth-btn{
+        width: 100%;
+    }
+     .brand-logos{
+        padding: 64px 16px;
+     }
+    .features-section{
+        padding: 64px 16px;
+    }
+    .feature-section-maintitle .main-title h2{
+        padding: 20px;
+    }
+    .feature-section-subtext p{
+        padding: 0px;
+    }
+    
+    .second-features-section{
+        padding: 64px 16px;
+    }
+    .second-feature-section-maintitle .main-title h2{
+        padding: 20px;
+    }
+    .second-feature-section-subtext p{
+        padding: 0px;
+    }
+     .review-section{
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 64px;
+        padding-bottom: 0px;
+     }
+    .main-review-section{
+        padding: 0px;
+    }
+    .review .desc{
+        font-size: 20px;
+    }
+    .avatar-section{
+        padding-bottom: 128px;
+    }
+    .unlock-section{
+        padding: 0px;
+    }
+    .unlock-section-main-title{
+        padding: 64px 16px !important;
+    }
+    .unlock-section-title {
+        font-size: 32px;
+    }
+    .footer-first-section img{
+        margin: 0px;
+        align-self: flex-start;
+        padding-left: 9px;
+    }
+    .footer-desc{
+        text-align: left !important;
+        padding-left: 16px ;
+    }
+}
+
+
+@media (min-width: 992px){
+    .login-btn {
+        order: 0; 
+    }
+    .second-text{
+    font-size: 60px;
+}
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 20%;
+}
+}
+
