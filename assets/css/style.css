@@ -60,6 +60,9 @@ p{
     border-radius: 8px;
     order: 2;
 }
+.navbar-toggler{
+    border: none;
+}
 
 
 
@@ -264,7 +267,7 @@ p{
     max-width: 615px;
     text-align: center;
 }
-.two-btn{
+.unlock-section .two-btn{
     padding-top: 32px;
     gap: 8px;
 }
@@ -337,6 +340,9 @@ p{
     .navbar :nth-child(2){
         gap: 38px;
     }
+    .login-btn{
+        gap: 0px;
+    }
     .second-text{
     font-size: 40px !important;
     }
@@ -345,6 +351,7 @@ p{
     }
     .forth-btn{
         width: 100%;
+        justify-content: center;
     }
      .brand-logos{
         padding: 64px 16px;
@@ -367,6 +374,9 @@ p{
     }
     .second-feature-section-subtext p{
         padding: 0px;
+    }
+    .status-section{
+        padding: 64px 16px;
     }
      .review-section{
         padding-left: 16px;
@@ -392,6 +402,10 @@ p{
     .unlock-section-title {
         font-size: 32px;
     }
+    .two-btn .btn1 , .btn2{
+        width: 100%;
+        justify-content: center;
+    }
     .footer-first-section img{
         margin: 0px;
         align-self: flex-start;
@@ -414,6 +428,9 @@ p{
 .col-lg-3 {
     flex: 0 0 auto;
     width: 20%;
+}
+.status-sub-section{
+    margin: 40px;
 }
 }
 
